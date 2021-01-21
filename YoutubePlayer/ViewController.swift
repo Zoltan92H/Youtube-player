@@ -9,9 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+	var model = Model()
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = .white
+		
+		model.getVideos()
 	}
 
 
