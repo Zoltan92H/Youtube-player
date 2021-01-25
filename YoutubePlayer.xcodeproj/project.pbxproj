@@ -13,6 +13,8 @@
 		0515A08E25BA564E002E1D66 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A08D25BA564E002E1D66 /* Response.swift */; };
 		0515A09125BEF007002E1D66 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A09025BEF007002E1D66 /* VideoTableViewCell.swift */; };
 		0515A09B25BF1CD0002E1D66 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A09A25BF1CD0002E1D66 /* CacheManager.swift */; };
+		0515A09E25BF1F91002E1D66 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A09D25BF1F91002E1D66 /* DetailViewController.swift */; };
+		0515A0A225BF285C002E1D66 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0515A0A125BF285C002E1D66 /* WebKit.framework */; };
 		05E236B625B9DD6100B5FD9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E236B525B9DD6100B5FD9D /* AppDelegate.swift */; };
 		05E236B825B9DD6100B5FD9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E236B725B9DD6100B5FD9D /* SceneDelegate.swift */; };
 		05E236BA25B9DD6100B5FD9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E236B925B9DD6100B5FD9D /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 		0515A08D25BA564E002E1D66 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		0515A09025BEF007002E1D66 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		0515A09A25BF1CD0002E1D66 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		0515A09D25BF1F91002E1D66 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0515A0A125BF285C002E1D66 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		05E236B225B9DD6100B5FD9D /* YoutubePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E236B525B9DD6100B5FD9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05E236B725B9DD6100B5FD9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0515A0A225BF285C002E1D66 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				05E236B925B9DD6100B5FD9D /* ViewController.swift */,
+				0515A09D25BF1F91002E1D66 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -100,11 +106,20 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0515A0A025BF285C002E1D66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0515A0A125BF285C002E1D66 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		05E236A925B9DD6100B5FD9D = {
 			isa = PBXGroup;
 			children = (
 				05E236B425B9DD6100B5FD9D /* YoutubePlayer */,
 				05E236B325B9DD6100B5FD9D /* Products */,
+				0515A0A025BF285C002E1D66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,6 +225,7 @@
 				0515A08B25BA355C002E1D66 /* Model.swift in Sources */,
 				0515A08525BA3350002E1D66 /* Constants.swift in Sources */,
 				0515A09125BEF007002E1D66 /* VideoTableViewCell.swift in Sources */,
+				0515A09E25BF1F91002E1D66 /* DetailViewController.swift in Sources */,
 				0515A08825BA3512002E1D66 /* Video.swift in Sources */,
 				0515A08E25BA564E002E1D66 /* Response.swift in Sources */,
 			);
